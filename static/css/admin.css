@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #181C1F;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* navbar */
+
+.navbar {
+    width: 65%;
+    height: 50px;
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-items {
+    width: 90%;
+
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    color: #E7B89D;
+    padding: 1rem;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.navbar > a {
+    text-decoration: none;
+    border: 1px solid #CBBE8E;
+    color: #E7B89D;
+    padding: 0.3rem;
+}
+
+.navbar > a:hover {
+    background-color: #CBBE8E;
+    color: black;
+}
+
+.container {
+    width: 70%;
+    height: 100vh;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: red; */
+}
+
+.active {
+    border-bottom: 2px solid #CBBE8E;
+}
+
+.vl {
+    width: 110%;
+    transform: rotateZ(90deg);
+
+    position: relative;
+    left: 20%;
+}
+
+.output_terminal {
+    width: 30%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 2px solid white;
+
+    overflow: scroll;
+}
+
+.terminal_title {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.output-msg {
+    width: 80%;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+
+.form-btn {
+    margin: 2rem 0 0.5rem 0;
+    padding: 0.5rem 0.7rem;
+
+    background: transparent;
+
+    border: 1px solid white;
+
+    color: white;
+}
+
+.form-btn:hover {
+    background-color: white;
+    color: black;
+
+    cursor: pointer;
+}
+
+.input-field {
+    appearance: none;
+    background: transparent;
+
+    height: 40px;
+
+    margin-top: 2rem;
+
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+
+    color: white;
+    font-size: 16px;
+}
+
+.input-field::placeholder {
+    font-size: 0.9rem;
+
+    color: white;
+}
+
+form {
+    width: 300px; 
+
+    position: absolute;
+
+    padding: 2rem 3rem 2rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.success {
+    background-color: green;
+}
+
+.danger {
+    background-color: red;
+}
+
+
+.clear-btn {
+    position: absolute;
+
+    left: 97%;
+    top: 10px;
+
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.2rem;
+}
+
+.clear-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

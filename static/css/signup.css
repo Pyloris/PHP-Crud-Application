@@ -1,0 +1,24 @@
+.pass-checks {
+    margin-top: 20px;
+    list-style: none;
+    color: white;
+}
+
+.cpass-check {
+    list-style: none;
+    margin-top: 4px;
+    color: white;
+}
+
+.pass-checks > li {
+    margin-top: 5px;
+    user-select: none;
+}
+
+.pass-checks > li > span {
+    margin-right: 10px;
+}
+
+.cpass-check > li {
+    margin-top: 10px;
+}

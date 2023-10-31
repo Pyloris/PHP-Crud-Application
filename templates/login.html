@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "/crud_app/static/css/auth.css">
+    <title>Login</title>
+</head>
+<body>
+    <form action="/crud_app/login" method="POST">
+        <h3 class="header">Login Form</h3>
+        <input type="email" name="email" placeholder="Email" class="input-field" required>
+        <span class="message"><?= htmlspecialchars(isset($message) ? $message : NULL); ?></span>
+        <div class="pass-group">
+            <input type="password" name="password" placeholder="Password" class="input-field" required>
+            <span class="icon"><img src="/crud_app/static/images/hidden.png" width="20px"></span>
+        </div>
+        <span class="forgot-pass"><a href="/crud_app/forgot-password">Forgot Password?</a></span>
+        <div class="btn-group">
+            <button class="form-btn" name="Login" value="login">Login</button>
+        </div>
+        <div class="login-call">
+            Dont have an Account? <a href="/crud_app/signup">Signup</a>
+        </div>
+        <div class="oauth">
+            <p>Login using Google instead?</p>
+            <a href="https://af5a-122-161-241-94.ngrok-free.app/crud_app/oauth">
+                <img src="/crud_app/static/images/google.png" width="32px">
+            </a>
+        </div>
+    </form>
+
+    <script src="/crud_app/static/js/auth.js"></script>
+</body>
+</html>

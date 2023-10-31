@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/crud_app/static/css/admin.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li class="nav-item active">Add User</li>
+            <li class="nav-item">Show User</li>
+            <li class="nav-item">Remove User</li>
+            <li class="nav-item">Update User</li>
+        </ul>
+        <a href="/crud_app/logout">Log out</a>
+    </nav>
+
+
+    <div class="container">
+        <!-- add user form -->
+        <form action="/crud_app/add_user" method="post" class="add_user">
+            <input type="text" name="username" placeholder="Username" class="input-field" required>
+            <input type="email" name="email" placeholder="Email" class="input-field" required>
+            <input type="password" name="password" placeholder="Password" class="input-field" required>
+            <button class="form-btn">Add User</button>
+        </form>
+
+        <!-- show user -->
+        <form action="/crud_app/show_user" method="post" class="show_user">
+            <input type="email" name="email" placeholder="Email" class="input-field">
+            <button class="form-btn">Show User</button>
+        </form>
+
+        <!-- remove user -->
+        <form action="/crud_app/remove_user" method="post" class="remove_user">
+            <input type="email" name="email" placeholder="Email" class="input-field" required>
+            <button class="form-btn">Remove User</button>
+        </form>
+
+        <!-- update user -->
+        <form action="/crud_app/update_user" method="post" class="update_user">
+            <input type="email" name="target_email" placeholder="Target User Email" class="input-field" required>
+            <input type="text" name="username" placeholder="Username" class="input-field" required>
+            <input type="email" name="email" placeholder="Email" class="input-field" required>
+            <input type="password" name="password" placeholder="Password" class="input-field" required>
+            <button class="form-btn">Update User</button>
+        </form>
+    </div>
+
+    <!-- <hr class="vl"> -->
+
+    <div class="output_terminal">
+        <p class="terminal_title">Output</p>
+        <button class="clear-btn">clear</button>
+    </div>
+    <script src="/crud_app/static/js/admin.js"></script>
+</body>
+</html>

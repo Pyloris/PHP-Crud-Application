@@ -1,0 +1,6 @@
+{
+    "require" : {
+        "shoaib/sir-juni" : "dev-master",
+        "phpmailer/phpmailer": "^6.8"
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "/crud_app/static/css/auth.css">
+    <link rel="stylesheet" href="/crud_app/static/css/signup.css">
+    <title>Reset Password</title>
+</head>
+<body>
+    <form action="/crud_app/reset" method="POST">
+        <h3 class="header">Password Reset Form</h3>
+        <div class="pass-group">
+            <input type="password" name="password" placeholder="Password" class="input-field" required>
+            <span class="icon"><img src="/crud_app/static/images/hidden.png" width="20px"></span>
+        </div>
+        <ul class="pass-checks">
+            <li class="uppercase"><span></span>Uppercase Letters</li>
+            <li class="numbers"><span></span>Numbers</li>
+            <li class="symbols"><span></span>Special Symbols</li>
+            <li class="length"><span></span>Length greater than 8</li>
+        </ul>
+        <div class="c-pass-group">
+            <input type="password" name="cpassword" placeholder="Confirm Password" class="input-field" required>
+            <span class="c-icon">
+                <img src="/crud_app/static/images/hidden.png" width="20px">
+            </span>
+        </div>
+        <ul class="cpass-check">
+            <li></li>
+        </ul>
+        <input type="hidden" name="token" value="<?= $token; ?>">
+        <div class="btn-group">
+            <button class="form-btn" name="Login" value="login">Change Password</button>
+        </div>
+    </form>
+
+    <script src="/crud_app/static/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "/crud_app/static/css/auth.css">
+    <link rel="stylesheet" href="/crud_app/static/css/signup.css">
+    <title>Login</title>
+</head>
+<body>
+    <form action="/crud_app/signup" method="POST">
+        <h3 class="header">Signup Form</h3>
+        <input type="text" name="username" placeholder="Username" class="input-field" required>
+        <input type="email" name="email" placeholder="Email" class="input-field" required>
+        <div class="pass-group">
+            <input type="password" name="password" placeholder="Password" class="input-field" required>
+            <span class="icon"><img src="/crud_app/static/images/hidden.png" width="20px"></span>
+        </div>
+        <ul class="pass-checks">
+            <li class="uppercase"><span></span>Uppercase Letters</li>
+            <li class="numbers"><span></span>Numbers</li>
+            <li class="symbols"><span></span>Special Symbols</li>
+            <li class="length"><span></span>Length greater than 8</li>
+        </ul>
+        <div class="c-pass-group">
+            <input type="password" name="cpassword" placeholder="Confirm Password" class="input-field" required>
+            <span class="c-icon">
+                <img src="/crud_app/static/images/hidden.png" width="20px">
+            </span>
+        </div>
+        <ul class="cpass-check">
+            <li></li>
+        </ul>
+        <div class="btn-group">
+            <button class="form-btn" name="Signup" value="signup">Signup</button>
+        </div>
+        <div class="login-call">
+            Already have an Account? <a href="/crud_app/login">Login</a>
+        </div>
+        <div class="oauth">
+            <p>Signup using Google instead?</p>
+            <a href="https://af5a-122-161-241-94.ngrok-free.app/crud_app/oauth">
+                <img src="/crud_app/static/images/google.png" width="32px">
+            </a>
+        </div>
+    </form>
+
+    <script src="/crud_app/static/js/auth.js"></script>
+</body>
+</html>
