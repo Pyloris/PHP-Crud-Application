@@ -97,8 +97,8 @@ class AuthController {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
 
-        $mail->Username = "letmeuseit158@gmail.com";
-        $mail->Password = 'wrvj tzjv vgru wyiz';
+        $mail->Username = "xyyz@gmail.com";
+        $mail->Password = 'xxxx';
 
         $mail->Port = 465;
         $mail->SMTPSecure= 'ssl';
